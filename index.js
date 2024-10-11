@@ -7,7 +7,14 @@ const userDegree = Number(prompt(`enter your degree in fahrenheit`))
 convertToCelsius (userDegree)
 
 const degreeCel = convertToCelsius(userDegree)
-if(!userDegree) {
+if(userDegree!==0) {
+  //   0     !==0
+  //   ! true
+  //     false
+  //  words  !==0
+  //   NaN   !==0
+  //   ! false
+  //     true  
   alert(`please enter a number`)
 } else {
   alert(`your entered degree is equal to ${degreeCel} degree in celsius`)
